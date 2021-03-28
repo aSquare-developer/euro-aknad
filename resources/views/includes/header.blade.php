@@ -11,7 +11,7 @@
     </div>
     <div class="logo">
         <a href="{{ route('home_page') }}">
-            <img src="img/logo.png" alt="">
+            <img src="/img/logo.png" alt="">
         </a>
     </div>
     <div id="mobile-menu-wrap"></div>
@@ -25,8 +25,8 @@
     <div class="om-social">
         <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><img src="img/et.png" alt="Eesti keeles"></a>
-        <a href="#"><img src="img/rus.png" alt="На русском"></a>
+        <a href="#"><img src="/img/et.png" alt="Eesti keeles"></a>
+        <a href="#"><img src="/img/rus.png" alt="На русском"></a>
     </div>
 </div>
 <!-- Offcanvas Menu Wrapper End -->
@@ -38,7 +38,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="logo">
-                        <a href="{{ route('home_page') }}"><img src="img/logo.png" alt=""></a>
+                        <a href="{{ route('home_page') }}"><img src="/img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -63,15 +63,15 @@
                     <nav class="nav-menu">
                         <ul>
                             <li class="{{ Request::routeIs('home_page') ? 'active' : '' }}"><a href="{{ route('home_page') }}">Koduleht</a></li>
-                            <li><a href="#">Aknad</a>
+                            <li class="{{ (request()->segment(1) == 'windows') ? 'active' : '' }}"><a href="{{ route('windows_page') }}">Aknad</a>
                                 <ul class="dropdown">
-                                    <li><a href="#">Alumiinium</a></li>
-                                    <li><a href="#">Puit-alumiinium aknad</a></li>
-                                    <li><a href="#">Puitaknad</a></li>
-                                    <li><a href="#">PVC Aknad</a></li>
+                                    <li><a href="{{ route('windows_alumiinium_page') }}">Alumiinium</a></li>
+                                    <li><a href="{{ route('windows_puit_alumiinium_page') }}">Puit-alumiinium aknad</a></li>
+                                    <li><a href="{{ route('windows_puit_aknad_page') }}">Puitaknad</a></li>
+                                    <li><a href="{{ route('windows_pvc_aknad_page') }}">PVC Aknad</a></li>
                                 </ul>
                             </li>
-                            <li class="{{ Request::routeIs('contact_page') ? 'active' : '' }}"><a href="{{ route('gallery_page') }}">Gallerii</a></li>
+                            <li class="{{ Request::routeIs('gallery_page') ? 'active' : '' }}"><a href="{{ route('gallery_page') }}">Gallerii</a></li>
                             <li class="{{ Request::routeIs('contact_page') ? 'active' : '' }}"><a href="{{ route('contact_page') }}">Kontakt</a></li>
                         </ul>
                     </nav>
@@ -80,8 +80,8 @@
                     <div class="hn-social">
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><img src="img/et.png" alt="Eesti keeles"></a>
-                        <a href="#"><img src="img/rus.png" alt="На русском"></a>
+                        <a href="#"><img src="/img/et.png" alt="Eesti keeles"></a>
+                        <a href="#"><img src="/img/rus.png" alt="На русском"></a>
                     </div>
                 </div>
             </div>

@@ -8,9 +8,9 @@
 <section class="hero-section">
     <div class="container">
         <div class="hs-slider owl-carousel">
-            <div class="hs-item set-bg" data-setbg="img/home-carousel/image-1.jpg"></div>
-            <div class="hs-item set-bg" data-setbg="img/home-carousel/image-2.jpg"></div>
-            <div class="hs-item set-bg" data-setbg="img/home-carousel/image-3.jpg"></div>
+            <div class="hs-item set-bg" data-setbg="/img/home-carousel/image-1.jpg"></div>
+            <div class="hs-item set-bg" data-setbg="/img/home-carousel/image-2.jpg"></div>
+            <div class="hs-item set-bg" data-setbg="/img/home-carousel/image-3.jpg"></div>
         </div>
     </div>
 </section>
@@ -19,10 +19,12 @@
 <section class="blog-details-section spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 m-auto p-0">
+                <div class="col-lg-11 m-auto p-0">
                     <div class="blog-details-content">
                         <div class="bc-details">
                             <div class="bc-text">
+                              <p><h4>Kes, mis on EURO-AKNAD?</h4></p>
+
                                 <p>Meie ettevõte teeb koostööd Euroopas asuva ukse- ja aknatehasega, kes on juhtiv
 PVC-st tisleritoodete valmistaja maailmas ning peamine PVC-akende ja -uste
 tootja Euroopas.

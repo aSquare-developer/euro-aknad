@@ -5,7 +5,7 @@
 @section('content')
 
 <!-- Breadcrumb Section Begin -->
-<section class="breadcrumb-section spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
+<section class="breadcrumb-section spad set-bg" data-setbg="/img/breadcrumb-bg.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -28,57 +28,57 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="property-item">
-                    <div class="pi-pic set-bg" data-setbg="img/gallery/image-1.jpg"></div>
+                    <div class="pi-pic set-bg" data-setbg="/img/gallery/image-1.jpg"></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="property-item">
-                    <div class="pi-pic set-bg" data-setbg="img/gallery/image-2.jpg"></div>
+                    <div class="pi-pic set-bg" data-setbg="/img/gallery/image-2.jpg"></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="property-item">
-                    <div class="pi-pic set-bg" data-setbg="img/gallery/image-3.jpg"></div>
+                    <div class="pi-pic set-bg" data-setbg="/img/gallery/image-3.jpg"></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="property-item">
-                    <div class="pi-pic set-bg" data-setbg="img/gallery/image-4.jpg"></div>
+                    <div class="pi-pic set-bg" data-setbg="/img/gallery/image-4.jpg"></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="property-item">
-                    <div class="pi-pic set-bg" data-setbg="img/gallery/image-5.jpg"></div>
+                    <div class="pi-pic set-bg" data-setbg="/img/gallery/image-5.jpg"></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="property-item">
-                    <div class="pi-pic set-bg" data-setbg="img/gallery/image-6.jpg"></div>
+                    <div class="pi-pic set-bg" data-setbg="/img/gallery/image-6.jpg"></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="property-item">
-                    <div class="pi-pic set-bg" data-setbg="img/gallery/image-7.jpg"></div>
+                    <div class="pi-pic set-bg" data-setbg="/img/gallery/image-7.jpg"></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="property-item">
-                    <div class="pi-pic set-bg" data-setbg="img/gallery/image-8.jpg"></div>
+                    <div class="pi-pic set-bg" data-setbg="/img/gallery/image-8.jpg"></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="property-item">
-                    <div class="pi-pic set-bg" data-setbg="img/gallery/image-9.jpg"></div>
+                    <div class="pi-pic set-bg" data-setbg="/img/gallery/image-9.jpg"></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="property-item">
-                    <div class="pi-pic set-bg" data-setbg="img/gallery/image-10.jpg"></div>
+                    <div class="pi-pic set-bg" data-setbg="/img/gallery/image-10.jpg"></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="property-item">
-                    <div class="pi-pic set-bg" data-setbg="img/gallery/image-11.jpg"></div>
+                    <div class="pi-pic set-bg" data-setbg="/img/gallery/image-11.jpg"></div>
                 </div>
             </div>
         </div>

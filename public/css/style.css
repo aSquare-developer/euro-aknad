@@ -3039,8 +3039,8 @@ li .richText-btn[data-command=toggleCode] {
   Blog Details
 -----------------------*/
 .blog-details-section {
-  padding-top: 80px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .blog-details-content .bc-top {
