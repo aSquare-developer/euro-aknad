@@ -11,6 +11,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
 
+    <link rel="icon" href="/img/euro-aknad-32x32.png" sizes="32x32" />
+
     <!-- Css Styles -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
