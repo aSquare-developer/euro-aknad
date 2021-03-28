@@ -25,8 +25,8 @@
     <div class="om-social">
         <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><img src="img/et.png" alt=""></a>
-        <a href="#"><img src="img/rus.png" alt=""></a>
+        <a href="#"><img src="img/et.png" alt="Eesti keeles"></a>
+        <a href="#"><img src="img/rus.png" alt="На русском"></a>
     </div>
 </div>
 <!-- Offcanvas Menu Wrapper End -->
@@ -71,7 +71,7 @@
                                     <li><a href="#">PVC Aknad</a></li>
                                 </ul>
                             </li>
-                            <li class="{{ Request::routeIs('gallery_page') ? 'active' : '' }}"><a href="{{ route('gallery_page') }}">Gallerii</a></li>
+                            <li class="{{ Request::routeIs('contact_page') ? 'active' : '' }}"><a href="{{ route('gallery_page') }}">Gallerii</a></li>
                             <li class="{{ Request::routeIs('contact_page') ? 'active' : '' }}"><a href="{{ route('contact_page') }}">Kontakt</a></li>
                         </ul>
                     </nav>
@@ -80,8 +80,8 @@
                     <div class="hn-social">
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><img src="img/et.png" alt=""></a>
-                        <a href="#"><img src="img/rus.png" alt=""></a>
+                        <a href="#"><img src="img/et.png" alt="Eesti keeles"></a>
+                        <a href="#"><img src="img/rus.png" alt="На русском"></a>
                     </div>
                 </div>
             </div>
