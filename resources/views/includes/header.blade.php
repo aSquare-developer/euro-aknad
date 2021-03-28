@@ -10,7 +10,7 @@
         <span class="icon_close"></span>
     </div>
     <div class="logo">
-        <a href="/">
+        <a href="{{ route('home_page') }}">
             <img src="img/logo.png" alt="">
         </a>
     </div>
@@ -38,7 +38,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="logo">
-                        <a href="/"><img src="img/logo.png" alt=""></a>
+                        <a href="{{ route('home_page') }}"><img src="img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -62,7 +62,7 @@
                 <div class="col-lg-9">
                     <nav class="nav-menu">
                         <ul>
-                            <li class="active"><a href="/">Koduleht</a></li>
+                            <li class="{{ Request::routeIs('home_page') ? 'active' : '' }}"><a href="{{ route('home_page') }}">Koduleht</a></li>
                             <li><a href="#">Aknad</a>
                                 <ul class="dropdown">
                                     <li><a href="#">Alumiinium</a></li>
@@ -71,8 +71,8 @@
                                     <li><a href="#">PVC Aknad</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Gallerii</a></li>
-                            <li><a href="#">Kontakt</a></li>
+                            <li class="{{ Request::routeIs('gallery_page') ? 'active' : '' }}"><a href="{{ route('gallery_page') }}">Gallerii</a></li>
+                            <li class="{{ Request::routeIs('contact_page') ? 'active' : '' }}"><a href="{{ route('contact_page') }}">Kontakt</a></li>
                         </ul>
                     </nav>
                 </div>

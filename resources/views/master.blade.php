@@ -6,7 +6,9 @@
 <body>
 @include('includes.header')
 
+@yield('content')
 
+@include('includes.contact-section')
 
 @include('includes.footer')
 
