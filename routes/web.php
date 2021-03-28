@@ -21,6 +21,7 @@ use App\Http\Controllers\WindowsPageController;
 Route::get('/', [HomePageController::class, 'index'])->name('home_page');
 Route::get('/gallery', [GalleryPageController::class, 'index'])->name('gallery_page');
 Route::get('/contact', [ContactPageController::class, 'index'])->name('contact_page');
+Route::post('/contact/submit', [ContactPageController::class, 'submit_contact_form'])->name('submit_contact_form');
 
 Route::get('/windows', [WindowsPageController::class, 'index'])->name('windows_page');
 Route::get('/windows/alumiinium', [WindowsPageController::class, 'index_alumiinium'])->name('windows_alumiinium_page');
