@@ -23,7 +23,7 @@
                     <div class="blog-details-content">
                         <div class="bc-details">
                             <div class="bc-text">
-                              <p><h4>Kes, mis on EURO-AKNAD?</h4></p>
+                              <h4 class="mb-3">Kes, mis on EURO-AKNAD?</h4>
 
                                 <p>Meie ettevõte teeb koostööd Euroopas asuva ukse- ja aknatehasega, kes on juhtiv
 PVC-st tisleritoodete valmistaja maailmas ning peamine PVC-akende ja -uste
