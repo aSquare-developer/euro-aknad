@@ -62,7 +62,7 @@
                 <div class="col-lg-9">
                     <nav class="nav-menu">
                         <ul>
-                            <li class="{{ Request::routeIs('home_page') ? 'active' : '' }}"><a href="{{ route('home_page') }}">Koduleht</a></li>
+                            <li class="{{ Request::routeIs('home_page') ? 'active' : '' }}"><a href="{{ route('home_page') }}">{{ __('header.nav_home_page') }}</a></li>
                             <li class="{{ (request()->segment(1) == 'windows') ? 'active' : '' }}"><a href="{{ route('windows_page') }}">Aknad</a>
                                 <ul class="dropdown">
                                     <li><a href="{{ route('windows_alumiinium_page') }}">Alumiinium</a></li>
@@ -80,8 +80,11 @@
                     <div class="hn-social">
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><img src="/img/et.png" alt="Eesti keeles"></a>
-                        <a href="#"><img src="/img/rus.png" alt="На русском"></a>
+                        @if (App::getLocale() == 'et')
+                          <a href="{{ route('changeLang', 'ru') }}"><img src="/img/rus.png" alt="На русском" class="mr-1">На русском</a>
+                        @else
+                          <a href="{{ route('changeLang', 'et') }}"><img src="/img/et.png" alt="Eesti keeles" class="mr-1">Eesti keeles</a>
+                        @endif
                     </div>
                 </div>
             </div>

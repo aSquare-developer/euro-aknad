@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Validation English Language Lines
+    | Validation Russian Language Lines
     |--------------------------------------------------------------------------
     |
     | The following language lines contain the default error messages used by

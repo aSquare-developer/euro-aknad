@@ -35,7 +35,7 @@
             <div class="col-lg-12">
                 <div class="cf-content">
                     <div class="cc-title">
-                        <h4>Contact form</h4>
+                        <h4>{{ __('contact-page.contact_form_tile') }}</h4>
                         <p>Duis voluptatum. Id vis consequat consetetur dissentiet, ceteros commune perp <br />etua
                             mei et. Simul viderer facilisis egimus tractatos splendi.</p>
                     </div>
