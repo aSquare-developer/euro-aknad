@@ -139,7 +139,7 @@ return [
         'date'                  => 'Дата',
         'day'                   => 'День',
         'description'           => 'Описание',
-        'email'                 => 'E-Mail адрес',
+        'email'                 => 'Эл. адрес',
         'excerpt'               => 'Выдержка',
         'first_name'            => 'Имя',
         'gender'                => 'Пол',
@@ -159,7 +159,7 @@ return [
         'title'                 => 'Наименование',
         'username'              => 'Никнейм',
         'year'                  => 'Год',
-        'message'               => 'Сообщение'
+        'message'               => 'Сообщение',
     ],
 
 ];
