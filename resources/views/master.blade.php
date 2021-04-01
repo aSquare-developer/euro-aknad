@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="et">
+<html lang="{{ App::getLocale() }}">
 
 @include('includes.head')
 

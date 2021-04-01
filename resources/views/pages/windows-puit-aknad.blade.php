@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', 'Puit Aknad' .' - '. config('app.name'))
+@section('title', __('header.nav_window_page_wood') . ' - ' . config('app.name'))
 
 @section('content')
 
@@ -10,10 +10,10 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-text">
-                    <h4>Puit Aknad</h4>
+                    <h4>{{ __('header.nav_window_page_wood') }}</h4>
                     <div class="bt-option">
-                        <a href="{{ route('home_page') }}"><i class="fa fa-home"></i> Home</a>
-                        <span>Puit Aknad</span>
+                        <a href="{{ route('home_page') }}"><i class="fa fa-home"></i> {{ __('header.nav_home_page') }}</a>
+                        <span>{{ __('header.nav_window_page_wood') }}</span>
                     </div>
                 </div>
             </div>

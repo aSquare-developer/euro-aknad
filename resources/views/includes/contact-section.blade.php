@@ -9,7 +9,7 @@
                             <i class="fa fa-map-marker"></i>
                         </div>
                         <div class="ci-text">
-                            <h5>Address</h5>
+                            <h5>{{ __('contact-section.address') }}</h5>
                             <p>Estonia, Tartu</p>
                         </div>
                     </div>
@@ -18,7 +18,7 @@
                             <i class="fa fa-mobile"></i>
                         </div>
                         <div class="ci-text">
-                            <h5>Phone</h5>
+                            <h5>{{ __('contact-section.phone')}}</h5>
                             <ul>
                                 <li>+372 56 875 401 - Info</li>
                                 <li>+372 55 303  93 - Tehniline osa</li>
@@ -30,7 +30,7 @@
                             <i class="fa fa-headphones"></i>
                         </div>
                         <div class="ci-text">
-                            <h5>Support</h5>
+                            <h5>{{ __('contact-section.support') }}</h5>
                             <p>info@euro-aknad.ee</p>
                         </div>
                     </div>

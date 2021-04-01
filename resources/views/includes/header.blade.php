@@ -1,7 +1,3 @@
-<!-- Page Preloder -->
-<!-- <div id="preloder">
-    <div class="loader"></div>
-</div> -->
 
 <!-- Offcanvas Menu Wrapper Begin -->
 <div class="offcanvas-menu-overlay"></div>
@@ -20,13 +16,16 @@
             <li><i class="icon_mail_alt"></i> info@euro-aknad.ee</li>
             <li><i class="fa fa-mobile-phone"></i> +372 56 875 401</li>
         </ul>
-        <a href="https://euroikkunat.shop/" target="_blank" class="hw-btn">Kalkulaator</a>
+        <a href="https://euroikkunat.shop/" target="_blank" class="hw-btn">{{ __('header.calculator_button_text') }}</a>
     </div>
     <div class="om-social">
         <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><img src="/img/et.png" alt="Eesti keeles"></a>
-        <a href="#"><img src="/img/rus.png" alt="На русском"></a>
+        @if (App::getLocale() == 'et')
+          <a href="{{ route('changeLang', 'ru') }}"><img src="/img/rus.png" alt="На русском" class="mr-1">{{ __('header.rus_lang_button_text') }}</a>
+        @else
+          <a href="{{ route('changeLang', 'et') }}"><img src="/img/et.png" alt="Eesti keeles" class="mr-1">{{ __('header.est_lang_button_text') }}</a>
+        @endif
     </div>
 </div>
 <!-- Offcanvas Menu Wrapper End -->
@@ -47,7 +46,7 @@
                             <li><i class="icon_mail_alt"></i> info@euro-aknad.ee</li>
                             <li><i class="fa fa-mobile-phone"></i>+372 56 875 401</li>
                         </ul>
-                        <a href="https://euroikkunat.shop/" target="_blank" class="hw-btn">Kalkulaator</a>
+                        <a href="https://euroikkunat.shop/" target="_blank" class="hw-btn">{{ __('header.calculator_button_text') }}</a>
                     </div>
                 </div>
             </div>
@@ -63,16 +62,16 @@
                     <nav class="nav-menu">
                         <ul>
                             <li class="{{ Request::routeIs('home_page') ? 'active' : '' }}"><a href="{{ route('home_page') }}">{{ __('header.nav_home_page') }}</a></li>
-                            <li class="{{ (request()->segment(1) == 'windows') ? 'active' : '' }}"><a href="{{ route('windows_page') }}">Aknad</a>
+                            <li class="{{ (request()->segment(1) == 'windows') ? 'active' : '' }}"><a href="{{ route('windows_page') }}">{{ __('header.nav_window_page') }}</a>
                                 <ul class="dropdown">
-                                    <li><a href="{{ route('windows_alumiinium_page') }}">Alumiinium</a></li>
-                                    <li><a href="{{ route('windows_puit_alumiinium_page') }}">Puit-alumiinium aknad</a></li>
-                                    <li><a href="{{ route('windows_puit_aknad_page') }}">Puitaknad</a></li>
-                                    <li><a href="{{ route('windows_pvc_aknad_page') }}">PVC Aknad</a></li>
+                                    <li><a href="{{ route('windows_alumiinium_page') }}">{{ __('header.nav_window_page_aluminium') }}</a></li>
+                                    <li><a href="{{ route('windows_puit_alumiinium_page') }}">{{ __('header.nav_window_page_wood_aluminium') }}</a></li>
+                                    <li><a href="{{ route('windows_puit_aknad_page') }}">{{ __('header.nav_window_page_wood') }}</a></li>
+                                    <li><a href="{{ route('windows_pvc_aknad_page') }}">{{ __('header.nav_window_page_pvc') }}</a></li>
                                 </ul>
                             </li>
-                            <li class="{{ Request::routeIs('gallery_page') ? 'active' : '' }}"><a href="{{ route('gallery_page') }}">Gallerii</a></li>
-                            <li class="{{ Request::routeIs('contact_page') ? 'active' : '' }}"><a href="{{ route('contact_page') }}">Kontakt</a></li>
+                            <li class="{{ Request::routeIs('gallery_page') ? 'active' : '' }}"><a href="{{ route('gallery_page') }}">{{ __('header.nav_gallery_page') }}</a></li>
+                            <li class="{{ Request::routeIs('contact_page') ? 'active' : '' }}"><a href="{{ route('contact_page') }}">{{ __('header.nav_contact_page') }}</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -81,9 +80,9 @@
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-instagram"></i></a>
                         @if (App::getLocale() == 'et')
-                          <a href="{{ route('changeLang', 'ru') }}"><img src="/img/rus.png" alt="На русском" class="mr-1">На русском</a>
+                          <a href="{{ route('changeLang', 'ru') }}"><img src="/img/rus.png" alt="На русском" class="mr-1">{{ __('header.rus_lang_button_text') }}</a>
                         @else
-                          <a href="{{ route('changeLang', 'et') }}"><img src="/img/et.png" alt="Eesti keeles" class="mr-1">Eesti keeles</a>
+                          <a href="{{ route('changeLang', 'et') }}"><img src="/img/et.png" alt="Eesti keeles" class="mr-1">{{ __('header.est_lang_button_text') }}</a>
                         @endif
                     </div>
                 </div>

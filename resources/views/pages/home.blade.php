@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', 'Home Page' .' - '. config('app.name'))
+@section('title', __('header.nav_home_page') . ' - ' . config('app.name'))
 
 @section('content')
 
