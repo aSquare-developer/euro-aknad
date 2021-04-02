@@ -22,9 +22,9 @@
         <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-instagram"></i></a>
         @if (App::getLocale() == 'et')
-          <a href="{{ route('changeLang', 'ru') }}"><img src="/img/rus.png" alt="На русском" class="mr-1">{{ __('header.rus_lang_button_text') }}</a>
+          <a href="{{ route('changeLang', 'ru') }}"><img src="/img/rus.png" alt="На русском"></a>
         @else
-          <a href="{{ route('changeLang', 'et') }}"><img src="/img/et.png" alt="Eesti keeles" class="mr-1">{{ __('header.est_lang_button_text') }}</a>
+          <a href="{{ route('changeLang', 'et') }}"><img src="/img/et.png" alt="Eesti keeles"></a>
         @endif
     </div>
 </div>

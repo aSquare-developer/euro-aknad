@@ -21,7 +21,7 @@ class ContactPageController extends Controller
 
       Mail::to('artur.anissimov@gmail.com')->send(new ContactFormMail($data));
 
-      return redirect()->route('contact_page')->with('success', 'Your message has been successfully sended.');
+      return redirect()->route('contact_page')->with('success', __('contact-page.message_successfully_sended'));
 
     }
 }

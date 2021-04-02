@@ -17,5 +17,6 @@ return [
   'contact_form_email' => 'Email',
   'contact_form_phone' => 'Phone',
   'contact_form_message' => 'Message',
-  'contact_form_send_btn_title' => 'Send Message', 
+  'contact_form_send_btn_title' => 'Send Message',
+  'message_successfully_sended' => 'Your message has been successfully sended.',
 ];

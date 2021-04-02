@@ -20,7 +20,7 @@ use App\Http\Controllers\LocalizationController;
 |
 */
 
-Route::get('setlocale/{lang}', [LocalizationController::class, 'index'])->name('changeLang');
+Route::get('lang/{lang}', [LocalizationController::class, 'index'])->name('changeLang');
 
 Route::group(['middleware' => 'lang'],function () {
   Route::get('/', [HomePageController::class, 'index'])->name('home_page');

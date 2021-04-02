@@ -17,5 +17,6 @@ return [
   'contact_form_email' => 'Эл. адрес',
   'contact_form_phone' => 'Телефон',
   'contact_form_message' => 'Сообщение',
-  'contact_form_send_btn_title' => 'Отправить сообщение', 
+  'contact_form_send_btn_title' => 'Отправить сообщение',
+  'message_successfully_sended' => 'Ваше сообщение было успешно отправлено.',
 ];

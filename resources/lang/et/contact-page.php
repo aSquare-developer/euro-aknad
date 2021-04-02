@@ -17,5 +17,6 @@ return [
   'contact_form_email' => 'E-post',
   'contact_form_phone' => 'Telefon',
   'contact_form_message' => 'Sõnum',
-  'contact_form_send_btn_title' => 'Saada Sõnum', 
+  'contact_form_send_btn_title' => 'Saada Sõnum',
+  'message_successfully_sended' => 'Teie sõnum edukalt saadetud.',
 ];
