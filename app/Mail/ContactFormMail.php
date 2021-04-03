@@ -12,7 +12,7 @@ class ContactFormMail extends Mailable
     use Queueable, SerializesModels;
 
     public $data;
-    
+
     /**
      * Create a new message instance.
      *
@@ -28,8 +28,9 @@ class ContactFormMail extends Mailable
      *
      * @return $this
      */
-    public function build()
-    {
-        return $this->markdown('emails.contact.contact-form');
+    public function build() {
+        return $this->from($this->data['email'])
+        ->subject('This mail sended from Euro Aknad Contact form')
+        ->markdown('emails.contact.contact-form');
     }
 }

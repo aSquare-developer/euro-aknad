@@ -17,9 +17,10 @@ class ContactPageController extends Controller
 
     public function submit_contact_form(ContactRequest $request) {
 
-      $data = $request->all();
+      $to_mail = 'artur.anissimov@gmail.com';
 
-      Mail::to('artur.anissimov@gmail.com')->send(new ContactFormMail($data));
+      $data = $request->all();
+      Mail::to($to_mail)->send(new ContactFormMail($data));
 
       return redirect()->route('contact_page')->with('success', __('contact-page.message_successfully_sended'));
 
