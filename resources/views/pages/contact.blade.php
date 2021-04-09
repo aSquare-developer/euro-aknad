@@ -53,11 +53,11 @@
                     <form action="{{ route('submit_contact_form') }}" method="POST" class="cc-form">
                       @csrf
                         <div class="group-input">
-                            <input type="text" name="name" placeholder="{{ __('contact-page.contact_form_name') }}">
-                            <input type="text" name="email" placeholder="{{ __('contact-page.contact_form_email') }}">
-                            <input type="text" name="phone" placeholder="{{ __('contact-page.contact_form_phone') }}">
+                            <input type="text" name="name" value="{{old('name')}}" placeholder="{{ __('contact-page.contact_form_name') }}">
+                            <input type="text" name="email" value="{{old('email')}}" placeholder="{{ __('contact-page.contact_form_email') }}">
+                            <input type="text" name="phone" value="{{old('phone')}}" placeholder="{{ __('contact-page.contact_form_phone') }}">
                         </div>
-                        <textarea name="message" placeholder="{{ __('contact-page.contact_form_message') }}"></textarea>
+                        <textarea name="message" placeholder="{{ __('contact-page.contact_form_message') }}">{{old('message')}}</textarea>
                         <button type="submit" class="site-btn">{{ __('contact-page.contact_form_send_btn_title') }}</button>
                     </form>
                 </div>
